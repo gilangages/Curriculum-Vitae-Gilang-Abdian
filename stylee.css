@@ -1,0 +1,376 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  /* font-family: Dosis; */
+}
+
+/* Container untuk 2 layer */
+.layer-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+/* Layer bawah */
+.layer-bottom {
+  background-color: #090bdb;
+  height: 240%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Layer atas */
+.layer-top {
+  background-color: #f2e4df; /* putih */
+  height: 235%;
+  width: 98%;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border-radius: 20px; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* padding: 2rem; */
+}
+
+/* Konten di layer atas */
+.content {
+  display: flex;
+  gap: 8.5em !important;
+  color: #333;
+  text-align: left;
+}
+
+.container-kiri {
+  padding-left: 3em;
+  padding-top: 3em;
+}
+
+.garis-kiri {
+  padding: 0.5px;
+  background-color: #090bdb;
+  width: 352px;
+}
+
+.kiri-h2 {
+  margin-top: 0.5em;
+  color: #090bdb;
+  margin-bottom: 0.2em;
+  font-size: 2.4em;
+}
+
+.language {
+  margin-top: 1em;
+}
+
+.label {
+  font-size: 1.3em;
+  color: #090bdb;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 353px;
+  height: 15px;
+  background-color: #bec2f3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #090bdb;
+  width: 56%;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.kiri-skills-icon {
+  margin-left: 4px;
+}
+
+.skills {
+  margin-top: 0.8em;
+}
+
+.container-kanan .sub-kanan {
+  /* align-items: left; */
+  padding-top: 2em;
+  transform: translateX(-4.9em);
+}
+
+.kanan-name .name {
+  color: #090bdb;
+  font-size: 4em;
+  margin-left: 7px;
+}
+.kanan-job .job {
+  font-size: 2.4em;
+  color: #090bdb;
+  margin-left: 10px;
+}
+
+.kanan-sub-judul {
+  margin-left: 10px;
+  font-size: 2.4em;
+  color: #090bdb;
+}
+/* .kanan-contacts {
+  margin-top: 2em;
+  display: flex;
+  gap: 2.5em;
+  flex-direction: column;
+  } */
+.education-1,
+.project,
+.hoby {
+  display: flex;
+  color: #090bdb;
+  margin-top: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.sub-contacts {
+  padding-top: 14px;
+  color: #090bdb;
+  padding-left: 12px;
+}
+
+.view {
+  margin-left: 10px;
+  color: #4042a3;
+  text-decoration: none;
+}
+.view:hover {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.view:visited {
+  color: #4042a3;
+}
+.view:active {
+  color: #4042a3;
+}
+
+.kumpulan-hoby {
+  margin-top: -12px;
+  margin-left: 16px;
+}
+
+.garis-kanan {
+  margin: 8px;
+  width: 720px;
+  padding: 0.5px;
+  background-color: #090bdb;
+}
+
+/* tablet */
+@media (max-width: 900px) {
+  .container-kiri .img img {
+    width: 350px !important;
+  }
+
+  .layer-top {
+    height: 312%;
+    width: 166%;
+    top: 159%;
+    left: 85%;
+  }
+
+  .layer-bottom {
+    height: 318%;
+    width: 170%;
+    /* bottom: 100px; */
+  }
+}
+
+@media (max-width: 769px) {
+  .container-kiri .img img {
+    width: 350px !important;
+  }
+
+  .layer-top {
+    height: 352%;
+    width: 166%;
+    top: 179%;
+    left: 85%;
+  }
+
+  .layer-bottom {
+    height: 358%;
+    width: 170%;
+    /* bottom: 100px; */
+  }
+}
+
+@media (max-width: 431px) {
+  .layer-top {
+    height: 1525%;
+    width: 322%;
+    top: 766%;
+    left: 166%;
+  }
+
+  .layer-bottom {
+    height: 1533%;
+    width: 332%;
+    /* bottom: 100px; */
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  .container-kiri .img img {
+    margin: 4em 10em;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 870px !important;
+  }
+
+  .container-kanan {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .container-kiri {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .kiri-h2 {
+    font-size: 6.9em !important;
+  }
+  .garis-kiri {
+    width: 570px;
+    /* display: none !important; */
+  }
+  .about {
+    margin-left: -1em;
+    margin-right: 4em;
+  }
+  .about h2 {
+    font-size: 7.8em !important;
+  }
+  .about-text {
+    text-align: justify;
+    color: #2b2dae;
+    font-family: Pangelin, sans-serif, serif;
+    font-size: 4.6em;
+    line-height: 1.2em;
+  }
+
+  .languages {
+    margin-left: -1em;
+  }
+  .languages h2 {
+    margin-top: 1em;
+    font-size: 7.8em !important;
+  }
+  .language {
+    font-size: 3em !important;
+    /* font-size: 7.8em !important; */
+  }
+  .progress-bar {
+    width: 1150px;
+  }
+
+  .skills h2 {
+    margin-top: 1.3em !important;
+    font-size: 7.8em !important;
+  }
+
+  .skill-h2 {
+    margin-top: 0.9em !important;
+    margin-left: -0.2em;
+  }
+
+  .skill {
+    font-size: 3em !important;
+  }
+  .skill .label {
+    margin-top: 0.7em !important;
+  }
+  .kiri-skills-icon img {
+    width: 3em;
+    margin: 1em 0.5em;
+  }
+
+  .kanan-name,
+  .icon-star,
+  .garis-kanan-name,
+  .kanan-job {
+    display: none;
+  }
+
+  .kanan-contacts {
+    margin-left: 2.5em;
+    font-size: 2.6em;
+    line-height: 1.9em;
+    margin-top: -2em;
+    margin-bottom: 2em;
+  }
+  .sub-contacts span {
+    font-size: 1.5em !important;
+  }
+
+  .education {
+    margin-left: 6.8em;
+  }
+  .education h2 {
+    margin-top: 1em;
+    font-size: 7.8em !important;
+  }
+  .education .education-1 {
+    font-size: 2.5em;
+  }
+  .education p {
+    font-size: 5.4em !important;
+  }
+
+  .projects {
+    margin-left: 6.8em;
+  }
+  .projects h2 {
+    margin-top: 1em;
+    font-size: 7.8em !important;
+  }
+  .projects .project {
+    font-size: 3em;
+    margin: 1em;
+  }
+  .projects p,
+  #all-project {
+    margin-bottom: 1em;
+    font-size: 4.6em !important;
+  }
+
+  .hobies {
+    margin-left: 6.8em;
+  }
+  .hobies h2 {
+    margin-top: 1em;
+    font-size: 7.8em !important;
+  }
+  .kumpulan-hoby img {
+    margin-top: 1em;
+    width: 3em;
+    font-size: 3em !important;
+  }
+}
