@@ -377,14 +377,14 @@ body {
 
 @media (max-width: 361px) {
   .layer-top {
-    height: 1645%;
+    height: 1745%;
     width: 382%;
-    top: 826%;
+    top: 876%;
     left: 196%;
   }
 
   .layer-bottom {
-    height: 1652%;
+    height: 1752%;
     width: 392%;
     /* bottom: 100px; */
   }
