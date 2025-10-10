@@ -374,3 +374,18 @@ body {
     font-size: 3em !important;
   }
 }
+
+@media (max-width: 361px) {
+  .layer-top {
+    height: 1645%;
+    width: 382%;
+    top: 826%;
+    left: 196%;
+  }
+
+  .layer-bottom {
+    height: 1652%;
+    width: 392%;
+    /* bottom: 100px; */
+  }
+}
