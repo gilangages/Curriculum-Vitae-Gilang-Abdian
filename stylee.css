@@ -388,4 +388,12 @@ body {
     width: 392%;
     /* bottom: 100px; */
   }
+
+  .container-kiri .img img {
+    margin: 4em 12.8em;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 870px !important;
+  }
 }
