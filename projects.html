@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        font-family: "Nunito";
+        margin: 0;
+        box-sizing: border-box;
+
+        /* background-color: #f6e8e2; */
+      }
+      .header {
+        text-align: center;
+        padding-top: 20px;
+        /* padding-top: 20px; */
+      }
+      body {
+        background-color: #0d0dd9;
+        position: absolute;
+        top: 4px;
+        left: 14px;
+        /* z-index: 1; */
+      }
+      .container {
+        position: relative;
+        top: 8px;
+        right: 8px;
+        /* bottom: 10px; */
+        background-color: #f6e8e2;
+        /* margin: 20px; */
+        /* z-index: -1; */
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 40px;
+
+        padding: 10px;
+        margin: 30px;
+      }
+      .project {
+        border: 1px solid #0d0dd9;
+        padding: 5px;
+      }
+      .project:hover {
+        box-shadow: 0 0 10px #3100f4;
+        transition: 0.3s;
+      }
+      a {
+        text-decoration: none;
+      }
+      .project img {
+        width: 100%;
+        height: 260px;
+        margin-bottom: 10px;
+      }
+      h2,
+      h1 {
+        text-align: center;
+        color: #3100f4;
+        text-transform: capitalize;
+      }
+      p {
+        text-align: justify;
+        color: #5936e8;
+      }
+      button {
+        background-color: #f6e8e2;
+        border: none;
+        display: none;
+        padding: 10px;
+        width: 100%;
+        text-decoration: none;
+        cursor: pointer;
+        color: #0d0dd9;
+        /* background-color: #0d0dd9; */
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      a button:hover {
+        text-transform: uppercase;
+        color: #3100f4;
+        /* text-decoration: underline; */
+        font-weight: bold;
+      }
+      .footer p {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 10px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .projects {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        body {
+          left: 10px;
+          top: 3px;
+        }
+        .container {
+          bottom: 1px;
+          right: 5px;
+        }
+      }
+      @media screen and (min-width: 601px) and (max-width: 920px) {
+        .projects {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+        .container {
+          right: 7px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>All Projects</h1>
+      </div>
+      <div class="projects">
+        <div class="project">
+          <a href="proyek1-creativephoto/index.html">
+            <img src="img/creative-photo-studio.png" alt="" />
+            <h2>Creative Photo Studio</h2>
+            <p>
+              Creative Photo Studio adalah website portofolio fotografi yang
+              saya buat dengan desain modern dan responsif. Situs ini hanyalah
+              gambaran halaman landing page website fotografi yang berkualitas
+              tinggi. Berisikan informasi layanan dan mengapa memilih kami serta
+              tombol hubungi kami. Situs ini dibuat dengan menggunakan framework
+              bootsrap dan tambahan style css. Semua foto didapat di
+              unsplash.com dan ikonnya menggunakan fontawesome.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="proyek2-chealsea/index.html">
+            <img src="img/chealsea-profile.png" alt="" />
+            <h2>Chelsea FC: Club Profile</h2>
+            <p>
+              Proyek ini memberikan gambaran mendalam tentang Chelsea FC,
+              mengupas sejarah klub, perjalanan mereka di berbagai kompetisi,
+              dan pencapaian-pencapaian besar yang membentuk identitas Chelsea.
+              Saya juga menyoroti peran pemain-pemain ikonik. Dibuat hanya
+              dengan html dasar dan css tanpa menggunakan framework. Kemudian
+              untuk ikonnya menggunakan fontawesome.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="proyek3-mediumkw/index.html">
+            <img src="img/medium.png" alt="" />
+            <h2>Medium KW</h2>
+            <p>
+              Small Medium – Simulasi Landing Page ala Medium. Proyek ini adalah
+              landing page yang saya buat dengan mengadaptasi konsep desain dari
+              platform Medium. Fokus utama ada pada tampilan yang bersih dan
+              struktur layout yang rapi. Meskipun hanya sebuah landing page,
+              proyek ini mencerminkan pendekatan desain dan perhatian terhadap
+              detail yang saya terapkan dalam pengembangan web. Proyek ini
+              menggunakan Framework Bootstrap dalam pembuatannya.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="proyek5-mealio/index.html">
+            <img src="img/mealio.png" alt="" />
+            <h2>Mealio – Landing Page Brand Meal Prep Sehat</h2>
+            <p>
+              Mealio adalah landing page untuk brand fiktif yang menyediakan
+              layanan makanan sehat siap saji (meal prep). Halaman ini
+              menampilkan berbagai informasi seperti produk unggulan, tentang
+              brand, dan formulir kontak, dengan desain yang bersih dan
+              terstruktur. Proyek ini dibangun menggunakan HTML dan SASS (SCSS),
+              dengan pendekatan mobile-first agar tampil optimal di berbagai
+              perangkat. Melalui proyek ini, saya menampilkan kemampuan dalam
+              membangun tampilan web yang responsif, estetis, dan mudah
+              digunakan.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="proyek4-kitabantu/index.html">
+            <img src="img/kitabantu.png" alt="" />
+            <h2>KitaBantu – Proyek Slicing UI dengan Tailwind CSS</h2>
+            <p>
+              KitaBantu adalah antarmuka aplikasi mobile untuk platform donasi
+              online yang saya kembangkan dengan pendekatan mobile-first. Proyek
+              ini masih berada pada tahap slicing UI, di mana desain visual
+              diubah menjadi tampilan statis menggunakan Tailwind CSS. Fokus
+              utamanya adalah membangun tampilan yang responsif dan ringan untuk
+              layar ponsel. Saat ini, aplikasi belum memiliki backend, sehingga
+              belum dapat menyimpan data atau menjalankan fungsi donasi secara
+              langsung.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="proyek15-colorgenerator/index.html">
+            <img src="img/color-generator.png" alt="" />
+            <h2>
+              Color Generator dengan React.js: Dinamisasi Warna dan Opacity
+            </h2>
+            <p>
+              Color Generator ini merupakan bagian dari latihan kelas “React.js
+              State – Mengelola Perubahan Tampilan dengan Data bersama Event
+              Handler”. Dalam proyek ini, saya mempraktikkan penggunaan useState
+              untuk menghasilkan warna secara dinamis dalam format Hex dan RGB,
+              serta menyesuaikan tingkat opacity. Aplikasi ini memungkinkan
+              pengguna menghasilkan warna baru melalui tombol, menyalin kode
+              warna yang dihasilkan, dan mengatur nilai opacity secara real-time
+              menggunakan slider. Dengan antarmuka yang sederhana, fokus utama
+              aplikasi ini adalah pada logika pengelolaan state dan pemicuan
+              perubahan tampilan melalui event handler. Proyek ini membantu saya
+              memahami keterkaitan antara data dan tampilan dalam React, serta
+              bagaimana interaksi pengguna dapat langsung memengaruhi state
+              secara efisien.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek8-kuizia/">
+            <img src="img/kuizia.png" alt="" />
+            <h2>Web Kuizia dengan Vue 3</h2>
+            <p>
+              Kuizia adalah aplikasi kuis interaktif yang dibuat menggunakan Vue
+              3, dirancang untuk menguji dan meningkatkan pengetahuan pengguna
+              dalam berbagai topik umum yang relevan sepanjang zaman. Setiap
+              kuis terdiri dari 10 pertanyaan pilihan ganda yang disusun secara
+              acak. Setelah menyelesaikan kuis, pengguna akan langsung
+              mendapatkan skor akhir sebagai hasil evaluasi. Dengan tampilan
+              sederhana dan responsif, Kuizia cocok digunakan oleh siapa saja
+              yang ingin belajar sambil bermain.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek9-scoreboard/index.html">
+            <img src="img/live-score-counter.png" alt="" />
+            <h2>Live Score Counter</h2>
+            <p>
+              Web ini dibuat menggunakan HTML, CSS, dan JavaScript dengan tujuan
+              untuk memperdalam pemahaman tentang manipulasi DOM (Document
+              Object Model) di JavaScript. Aplikasi ini memungkinkan pengguna
+              untuk menghitung skor secara online dan dinamis. Pengguna dapat
+              memilih jumlah skor yang dibutuhkan untuk memenangkan
+              pertandingan, memasukkan nama masing-masing tim sebelum
+              pertandingan dimulai, serta melakukan reset untuk mengembalikan
+              semua perhitungan ke awal (0).
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek7-stickynote/index.html">
+            <img src="img/memo.png" alt="" />
+            <h2>Memo App dengan Vue 3</h2>
+            <p>
+              Aplikasi ini adalah proyek memo sederhana berbasis Vue 3 dan Vite.
+              Pengguna bisa menambahkan, menyimpan, dan menghapus memo, yang
+              ditampilkan dalam bentuk kartu berwarna acak. Data disimpan di
+              localStorage agar tetap tersimpan meski halaman dimuat ulang.
+              Proyek ini saya buat untuk melatih dasar-dasar Vue dan penerapan
+              gaya responsif dengan CSS.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek16-gocheck/index.html">
+            <img src="img/gochek.png" alt="" />
+            <h2>GoCheck</h2>
+            <p>
+              Proyek GoCheck ini saya buat sebagai bagian dari latihan di kelas
+              "React.js State Management - Panduan Menggunakan State yang Baik"
+              di CodePolitan. Seluruh konsep dan ide fitur aplikasi ini berasal
+              dari materi pembelajaran yang diberikan, khususnya terkait
+              penggunaan state di React untuk mengelola daftar tugas (to-do
+              list). Dari materi tersebut, saya mempraktikkan teknik seperti
+              lifting state up, pengelolaan data antar komponen, dan
+              child-to-parent data flow untuk menambahkan serta menghapus item.
+              Meskipun struktur dan fungsionalitas utama mengikuti panduan dari
+              kelas, saya melakukan sedikit sentuhan pribadi, seperti
+              menambahkan footer identitas pembuat dan mengganti skema warna
+              pada header, footer, serta tombol agar sesuai selera.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek17-accordionfaq/index.html">
+            <img src="img/interaktif-faq.png" alt="" />
+            <h2>Interactive FAQ Accordion</h2>
+            <p>
+              Proyek ini adalah implementasi Accordion FAQ interaktif
+              menggunakan React.js yang memanfaatkan konsep state management
+              untuk mengelola logika buka-tutup setiap item. Fitur ini
+              memanfaatkan useState untuk menangani perubahan tampilan
+              berdasarkan interaksi pengguna, serta prinsip lifting state up
+              agar status antar komponen tetap sinkron. Selain itu, proyek ini
+              dilengkapi dengan animasi smooth transition menggunakan Framer
+              Motion, memberikan pengalaman pengguna yang lebih halus dan
+              elegan. Dengan struktur komponen yang modular, Accordion ini mudah
+              diintegrasikan ke berbagai aplikasi web dan mendemonstrasikan
+              penerapan praktik terbaik dalam pengelolaan state di React.js.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek6-myshop/index.html">
+            <img src="img/myshoop.png" alt="" />
+            <h2>Simulasi Katalog Belanja dengan Vue.js 2</h2>
+            <p>
+              Proyek ini adalah aplikasi katalog produk yang saya bangun
+              menggunakan Vue.js 2. Pengguna dapat menelusuri daftar produk,
+              menambahkan produk ke keranjang dan menghapus produk dari
+              keranjang serta terdapat fitur filter harga. Perlu dicatat, situs
+              ini hanya menampilkan simulasi katalog dan keranjang belanja.
+              Pengguna tidak dapat melakukan transaksi atau proses pembelian
+              secara nyata. Proyek ini menjadi tantangan yang memperkuat
+              pemahaman saya dalam membangun antarmuka interaktif serta
+              mengelola data secara dinamis menggunakan Vue.js.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek14-todoapp/index.html">
+            <img src="img/note-app.png" alt="" />
+            <h2>Todo App Interaktif dengan React.js State dan Event</h2>
+            <p>
+              Todo App ini dikembangkan sebagai bagian dari pembelajaran
+              React.js dengan fokus pada penggunaan state, event handler, dan
+              penyimpanan data lokal. Dalam proyek ini, saya mempraktikkan
+              penggunaan useState untuk mengelola data secara dinamis, serta
+              useEffect untuk menyimpan dan memuat data dari Local Storage agar
+              tetap tersimpan meski halaman direfresh. Aplikasi ini mendukung
+              berbagai fitur seperti menambahkan, mengedit, menghapus, dan
+              menandai tugas sebagai selesai. Selain itu, terdapat fitur
+              pencarian catatan secara real-time, konfirmasi sebelum
+              penghapusan, serta pengaturan tema gelap dan terang (dark mode
+              switch). Dengan memanfaatkan React Developer Tools, saya juga
+              belajar memantau perubahan state dan memahami alur data dalam
+              komponen. Proyek ini membantu saya memperdalam pemahaman tentang
+              pengembangan aplikasi interaktif dan user-friendly menggunakan
+              React.js.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek10-AJAX and API/index.html">
+            <img src="img/ajax.png" alt="" />
+            <h2>Proyek API JavaScript — Dari Belajar ke Praktik</h2>
+            <p>
+              Web yang saya buat setelah mempelajari AJAX dan Web API
+              JavaScript. Saya telah mempelajari bagaimana pengertian API, apa
+              itu library Axios dan bagaimana penggunaannya, kemudian bagaimana
+              meminta request ke API dengan postman, hingga akhirnya terbuatlah
+              proyek web API yang dapat di lihat dengan klik tombol di bawah
+              ini.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek13-virtualcard/index.html">
+            <img src="img/virtual-card.png" alt="" />
+            <h2>
+              Custom Virtual Card React.js — Kartu Nama Digital Versi Unik
+            </h2>
+            <p>
+              Proyek ini adalah pengembangan dari latihan Virtual Card di kelas
+              React.js 101. Untuk menghindari meniru mentah contoh gambar
+              kucing, saya memodifikasi konten, gambar, dan elemen lainnya agar
+              tampil berbeda. Dalam proyek ini, saya mempraktikkan konsep
+              React.js seperti komponen, props, dan JSX untuk membuat kartu nama
+              digital yang menampilkan gambar, teks, dan badge keterampilan
+              secara modular. Struktur component-nya dirancang agar dinamis dan
+              mudah diubah sesuai kebutuhan. Proyek ini menunjukkan pemahaman
+              saya tentang pembuatan Reusable Component dan pengaturan data flow
+              di React.js sambil tetap menjaga orisinalitas dari contoh latihan.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek11-belajar-react-fundamental/">
+            <img src="img/react-dasar.png" alt="" />
+            <h2>Belajar React.js Fundamental</h2>
+            <p>
+              Saya telah mempelajari dasar-dasar React.js, salah satu library
+              populer JavaScript. Materinya mencakup cara membuat proyek React,
+              memahami konsep component, siklus hidup komponen seperti
+              componentDidMount, componentWillUnmount, dan componentWillMount,
+              serta cara melakukan fetch API menggunakan React. Proses
+              belajarnya dilakukan sambil praktik secara bertahap melalui video,
+              sehingga saya dapat memahami alur kerja React dengan lebih
+              mendalam. Hasilnya adalah sebuah proyek blog sederhana dengan tiga
+              halaman utama (Home, About, Blog) serta fitur search dinamis yang
+              menampilkan hasil pencarian secara real-time.
+            </p>
+          </a>
+        </div>
+        <div class="project">
+          <a href="/proyek12-drinkmenu/index.html">
+            <img src="img/sruput-segar.png" alt="" />
+            <h2>Sruput Segar – Drink Menu App</h2>
+            <p>
+              Sruput Segar adalah proyek latihan React.js yang saya kembangkan
+              setelah mengikuti kelas React.js 101 – Membuat dan Menggunakan
+              Komponen dalam Aplikasi Berbasis React.js. Melalui proyek ini,
+              saya menerapkan konsep dasar React seperti komponen, JSX, props,
+              dan one-way data flow untuk menampilkan daftar menu minuman secara
+              dinamis. Selain itu, saya juga belajar cara mengatur styling di
+              komponen, menjalankan logika JavaScript di dalam JSX, serta
+              menampilkan komponen dengan conditional rendering. Proyek ini saya
+              buat dengan tema menu minuman untuk mengganti contoh Warung Pad
+              Edi di materi menjadi Sruput Segar, agar lebih segar dan sesuai
+              ide saya sendiri.
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="footer-p">&copy; 2025. Created with love by Gilang Abdian.</p>
+      </div>
+    </div>
+  </body>
+</html>
