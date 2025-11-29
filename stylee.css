@@ -179,9 +179,12 @@ body {
 }
 
 /* tablet */
-@media (max-width: 900px) {
+@media (max-width: 1025px) {
   .container-kiri .img img {
     width: 350px !important;
+  }
+  .container-kiri {
+    width: 100%;
   }
 
   .layer-top {
